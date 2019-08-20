@@ -1,5 +1,7 @@
 'use strict'
 
+const events = require('./events.js')
+
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
 
@@ -7,6 +9,8 @@
 // require('./example')
 
 $(() => {
+  $('#recordings-page').hide()
+  events.addHandlers()
   setTimeout(function () {
     $('#spotify-player').removeClass('disappear')
     $('#blurb2').removeClass('disappear')

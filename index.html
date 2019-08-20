@@ -19,12 +19,12 @@
           <span class="navbar-toggler-icon">???</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a id="home" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Recordings</a>
+              <a id="recordings" class="nav-link" href="#">Recordings</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Calendar</a>
@@ -41,30 +41,37 @@
           </ul>
         </div>
       </nav>
-      <div>
-        <div id="blurb1" class="blurb animated slideInLeft">
-          <p class="text">"Ava Ordman is the greatest trombonist in the galaxy"-Luke Skywalker
-          </p>
+      <section id="home-page">
+        <div>
+          <div id="blurb1" class="blurb animated slideInLeft">
+            <p class="text">"Ava Ordman is the greatest trombonist in the galaxy"-Luke Skywalker
+            </p>
+          </div>
+          <div id="blurb2" class="disappear blurb animated slideInRight">
+            <p class="text">"The best glasses on this side of the Mississippi"-Fred
+            </p>
+          </div>
         </div>
-        <div id="blurb2" class="disappear blurb animated slideInRight">
-          <p class="text">"The best glasses on this side of the Mississippi"-Fred
-          </p>
+        <div>
+          <div id="blurb3" class="disappear blurb animated slideInLeft">
+            <p class="text">"The sweetest most sonorous sounds I ever did hear"-Joe Alessi
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div id="blurb3" class="disappear blurb animated slideInLeft">
-          <p class="text">"The sweetest most sonorous sounds I ever did hear"-Joe Alessi
-          </p>
+        <div>
+          <div id="blurb4" class="disappear blurb animated slideInRight">
+            <p class="text">"Who built her website? Find him for me!"-Moneybags McGee
+            </p>
+          </div>
         </div>
-      </div>
-      <div>
-        <div id="blurb4" class="disappear blurb animated slideInRight">
-          <p class="text">"Who built her website? Find him for me!"-Moneybags McGee
-          </p>
+        <!-- <div id="spotify-container" class="animated slideInRight">
+          <iframe id="spotify-player" class="disappear" src="https://open.spotify.com/embed/album/4yNVRVShScp3oUd2IKDE5d" width="350" height="460" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div> -->
+      </section>
+      <section id="recordings-page">
+        <div id="spotify-container" class="animated slideInRight">
+          <iframe id="spotify-player" class="disappear" src="https://open.spotify.com/embed/album/4yNVRVShScp3oUd2IKDE5d" width="350" height="460" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
-      </div>
-      <!-- <div id="spotify-container" class="animated slideInRight">
-        <iframe id="spotify-player" class="disappear" src="https://open.spotify.com/embed/album/4yNVRVShScp3oUd2IKDE5d" width="350" height="460" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </div> -->
+      </section>
     </body>
 </html>

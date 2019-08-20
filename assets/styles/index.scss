@@ -78,11 +78,11 @@ body {
 }
 
 #blurb3 {
-  margin: 3em 1em;
+  margin: 5em 1em;
 }
 
 #blurb4 {
-  margin: 0em 1em;
+  margin: -3em 1em;
   float: right;
 }
 
@@ -90,6 +90,7 @@ body {
   margin: 1em;
   float: right;
   display: inline-block;
+  animation-duration: 1s;
 }
 
 #spotify-player {
