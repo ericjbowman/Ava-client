@@ -1,1 +1,29 @@
 @import '~bootstrap/scss/bootstrap';
+
+$glasses: #00b0ba;
+
+$purple: #6700BA;
+$red: #BA0A00;
+$green: #53BA00;
+
+$triadPurple: #BA00B0;
+$triadYellow: #B0BA00;
+
+$darkGlasses: #007b86;
+
+$darkPurple: #4E0086;
+$darkRed: #860B00;
+$darkGreen: #388600;
+
+$brass: #d7bb67;
+
+
+body {
+  background-image: url('../public/Ava1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: $glasses;
+}
