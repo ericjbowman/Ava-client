@@ -19,8 +19,14 @@ $brass: #d7bb67;
 $brassPurple: #BB67D7;
 
 
-body {
+.home-background {
   background-image: url('../public/Ava1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recordings-background {
+  background-image: url('../public/HalfAva3.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -87,18 +93,9 @@ body {
 }
 
 #spotify-container {
-  margin: 1em;
-  float: right;
+  margin: 3em;
   display: inline-block;
-  animation-duration: 1s;
-}
-
-#spotify-player {
-  float: right;
-}
-
-#follow {
-  float: right;
+  // animation-duration: 1s;
 }
 
 @-webkit-keyframes rubberBand {

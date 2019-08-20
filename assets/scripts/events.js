@@ -1,6 +1,8 @@
 const onClickRecordings = function () {
   $('#home-page').hide()
   $('#recordings-page').show()
+  $('body').removeClass('home-background')
+  $('body').addClass('recordings-background')
 }
 
 const onClickHome = function () {
