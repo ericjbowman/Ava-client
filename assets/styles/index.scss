@@ -24,6 +24,24 @@ body {
   background-repeat: no-repeat;
 }
 
-h1 {
+.navbar-brand {
+  font-family: euphoria-script, sans-serif;
+  font-size: 40px;
+}
+
+#navbar-brand {
   color: $glasses;
 }
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: $brass;
+}
+
+// #navbarNav {
+//   display: flex;
+//   justify-content: flex-end;
+// }
