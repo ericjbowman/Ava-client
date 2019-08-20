@@ -73,6 +73,7 @@ $brassPurple: #BB67D7;
   background-color: rgba(103, 0, 186, 0.8);
   border-radius: 10px;
   display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #blurb1 {
@@ -259,4 +260,13 @@ $brassPurple: #BB67D7;
   width: 33%;
   height: 100%;
   background-color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-background {
+    background-image: url('../public/AvaMobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
