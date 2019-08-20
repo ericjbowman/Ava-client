@@ -59,13 +59,31 @@ body {
 //   justify-content: flex-end;
 // }
 
-#blurb {
+.blurb {
   margin: 1em;
   padding: 1em;
   width: 28%;
   background-color: rgba(103, 0, 186, 0.8);
   border-radius: 10px;
   display: inline-block;
+}
+
+#blurb1 {
+  margin: 1em 5em;
+}
+
+#blurb2 {
+  margin: 6em 3em;
+  float: right;
+}
+
+#blurb3 {
+  margin: 3em 1em;
+}
+
+#blurb4 {
+  margin: 0em 1em;
+  float: right;
 }
 
 #spotify-container {
@@ -224,8 +242,8 @@ body {
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
-  animation: slideInRight 2.5s;
-  animation-delay: 1s;
+  animation: slideInRight 2s;
+  // animation-delay: 1s;
 }
 
 .disappear {

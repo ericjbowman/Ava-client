@@ -9,5 +9,12 @@
 $(() => {
   setTimeout(function () {
     $('#spotify-player').removeClass('disappear')
+    $('#blurb2').removeClass('disappear')
   }, 1000)
+  setTimeout(function () {
+    $('#blurb3').removeClass('disappear')
+  }, 2000)
+  setTimeout(function () {
+    $('#blurb4').removeClass('disappear')
+  }, 2500)
 })
