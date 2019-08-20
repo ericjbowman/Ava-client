@@ -8,6 +8,8 @@ const onClickRecordings = function () {
 const onClickHome = function () {
   $('#home-page').show()
   $('#recordings-page').hide()
+  $('body').addClass('home-background')
+  $('body').removeClass('recordings-background')
 }
 
 const addHandlers = () => {

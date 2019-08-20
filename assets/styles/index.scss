@@ -28,6 +28,7 @@ $brassPurple: #BB67D7;
 .recordings-background {
   background-image: url('../public/HalfAva3.jpg');
   background-size: cover;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -93,9 +94,15 @@ $brassPurple: #BB67D7;
 }
 
 #spotify-container {
-  margin: 3em;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin: 3em 3em 0;
+  // display: inline-block;
   // animation-duration: 1s;
+}
+
+#follow-container {
+  margin: 3em;
 }
 
 @-webkit-keyframes rubberBand {
@@ -246,4 +253,10 @@ $brassPurple: #BB67D7;
 
 .disappear {
   display: none;
+}
+
+#black-space {
+  width: 33%;
+  height: 100%;
+  background-color: black;
 }
