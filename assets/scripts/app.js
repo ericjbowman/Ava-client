@@ -10,6 +10,7 @@ const events = require('./events.js')
 
 $(() => {
   $('#recordings-page').hide()
+  $('#calendar-page').hide()
   events.addHandlers()
   setTimeout(function () {
     $('#spotify-player').removeClass('disappear')

@@ -104,7 +104,7 @@ $brassPurple: #BB67D7;
 }
 
 #blurb4 {
-  margin: -6em 1em;
+  margin: -7em 1em;
   float: right;
 }
 
@@ -411,4 +411,23 @@ $brassPurple: #BB67D7;
 
 .concerto-container {
   margin-top: 8em;
+}
+
+.gig {
+  padding: 1em;
+  width: 75%;
+  background-color: rgba(10, 10, 10, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.gig-details, .gig-title {
+  font-family: alice, serif;
+  color: $glasses;
+}
+
+.gig-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 7em;
 }
