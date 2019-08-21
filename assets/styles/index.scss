@@ -26,9 +26,20 @@ $brassPurple: #BB67D7;
 }
 
 .recordings-background {
-  background-image: url('../public/HalfAva3.jpg');
+  background-image: url('../public/Record.jpg');
   background-size: cover;
-  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.students-background {
+  background-image: url('../public/Students4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calendar-background {
+  background-image: url('../public/Symphony.jpg');
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -94,10 +105,10 @@ $brassPurple: #BB67D7;
   float: right;
 }
 
-#spotify-container {
+.spotify-container {
   display: flex;
   justify-content: center;
-  margin: 3em 3em 0;
+  margin: 0 3em 3em;
   // display: inline-block;
   // animation-duration: 1s;
 }
@@ -256,10 +267,14 @@ $brassPurple: #BB67D7;
   display: none;
 }
 
-#black-space {
-  width: 33%;
-  height: 100%;
-  background-color: black;
+.concerto {
+  margin-top: 3em;
+}
+
+.movement {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
 }
 
 @media only screen and (max-width: 600px) {
