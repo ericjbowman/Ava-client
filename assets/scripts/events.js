@@ -1,4 +1,6 @@
 const onClickRecordings = function () {
+  $('#mvt-2').addClass('disappear')
+  $('#mvt-3').addClass('disappear')
   $('#home').removeClass('selected')
   $('#students').removeClass('selected')
   $('#calendar').removeClass('selected')
@@ -17,9 +19,9 @@ const onClickRecordings = function () {
   setTimeout(function () {
     $('#mvt-3').removeClass('disappear')
   }, 1000)
-  setTimeout(function () {
-    $('#spotify-player').removeClass('disappear')
-  }, 1500)
+  // setTimeout(function () {
+  //   $('#spotify-player').removeClass('disappear')
+  // }, 1500)
 }
 
 const onClickStudents = function () {
