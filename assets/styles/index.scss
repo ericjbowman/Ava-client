@@ -18,7 +18,6 @@ $darkGreen: #388600;
 $brass: #d7bb67;
 $brassPurple: #BB67D7;
 
-
 .home-background {
   background-image: url('../public/Ava1.jpg');
   background-size: cover;
@@ -92,16 +91,16 @@ $brassPurple: #BB67D7;
 }
 
 #blurb1 {
-  margin: 1em 5em;
+  margin: 7em 5em;
 }
 
 #blurb2 {
-  margin: 6em 3em;
+  margin: 11em 3em;
   float: right;
 }
 
 #blurb3 {
-  margin: 5em 1em;
+  margin: 3em 1em;
 }
 
 #blurb4 {
@@ -408,4 +407,8 @@ $brassPurple: #BB67D7;
 
 .nav-item {
   margin-right: 4em;
+}
+
+.concerto-container {
+  margin-top: 8em;
 }
