@@ -1,6 +1,8 @@
 'use strict'
 
+const indexDisplay = require('./templates/index-gigs.handlebars')
 const events = require('./events.js')
+const api = require('./api.js')
 
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
@@ -22,4 +24,8 @@ $(() => {
   setTimeout(function () {
     $('#blurb4').removeClass('disappear')
   }, 2500)
+  api.indexGigs()
+    .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: responseData.gigs })))
+    .then((responseData) => console.log('We got gigs!' + responseData))
+    .catch(console.log)
 })
