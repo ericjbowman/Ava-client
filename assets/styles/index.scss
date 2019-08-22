@@ -3,6 +3,7 @@
 $glasses: #00b0ba;
 
 $purple: #6700BA;
+$lightPurple: #D9BFEE;
 $red: #BA0A00;
 $green: #53BA00;
 
@@ -458,7 +459,7 @@ $cream: #FAF6EC;
   width: 75%;
   background-color: $cream;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 5px 5px 8px rgba(10, 10, 10);
 }
 
 .gig-details {
@@ -475,6 +476,7 @@ $cream: #FAF6EC;
 .gig-title-container {
   padding: 1.5em;
   background-color: $purple;
+  // border: 2px solid #D9BFEE;
   border-radius: 10px 10px 0 0
 }
 .gig-title {
