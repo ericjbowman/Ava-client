@@ -57,7 +57,7 @@ $brassPurple: #BB67D7;
 
 #navbar {
   // background-image: linear-gradient(rgba(15, 15, 15, 1), rgba(15, 15, 15, 0.3));
-  background-color: rgba(15, 15, 15, 0.7)
+  background-color: rgba(15, 15, 15, 0.8)
 }
 
 .nav-link {
@@ -72,7 +72,7 @@ $brassPurple: #BB67D7;
 }
 
 .text {
-  font-family: alice, serif;
+  font-family: 'Lora', serif;
   color: $white;
   -webkit-font-smoothing: antialiased;
 }
@@ -452,34 +452,50 @@ $brassPurple: #BB67D7;
 }
 
 .gig {
-  padding: 1em;
+  padding: 1.5em;
   width: 75%;
-  background-color: rgba(10, 10, 10, 0.8);
+  background-color: rgba(15, 15, 15, 0.9);
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gig-details {
-  font-size: 1.5em;
+  margin: .5em;
+  font-size: 1.2em;
 }
+
 .gig-details, .gig-title, .gig-description {
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  font-family: alice, serif;
+  // -webkit-font-smoothing: antialiased;
+  font-family: 'Lora', serif;
   color: $glasses;
 }
 
+.gig-title {
+  // font-family: 'Raleway', sans-serif;
+  // color: $glasses;
+  margin-bottom: 0.5em;
+}
+
 .gig-description {
-  -webkit-font-smoothing: antialiased;
-  font-size: 1.3em;
+  // -webkit-font-smoothing: antialiased;
+  font-size: 1.2em;
+  margin-bottom: 0;
 }
 
 .gigs-container {
-  margin-top: 7em;
+  margin-top: 8em;
 }
 
 .gig-container {
   display: flex;
   justify-content: center;
   margin-bottom: 3em;
+}
+
+hr {
+  background-color: $darkGlasses;
+}
+
+.material-icons {
+  color: $glasses;
 }
