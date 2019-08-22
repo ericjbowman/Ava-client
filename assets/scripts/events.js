@@ -13,12 +13,18 @@ const onClickRecordings = function () {
   $('body').removeClass('students-background')
   $('body').removeClass('calendar-background')
   $('body').addClass('recordings-background')
-  setTimeout(function () {
-    $('#mvt-2').removeClass('disappear')
-  }, 500)
-  setTimeout(function () {
-    $('#mvt-3').removeClass('disappear')
-  }, 1000)
+  const flipPlayers = function () {
+    $('#mvt-1').removeClass('disappear')
+    setTimeout(function () {
+      $('#mvt-2').removeClass('disappear')
+    }, 500)
+    setTimeout(function () {
+      $('#mvt-3').removeClass('disappear')
+    }, 1000)
+  }
+  $(document).ready(function () {
+    flipPlayers()
+  })
   // setTimeout(function () {
   //   $('#spotify-player').removeClass('disappear')
   // }, 1500)

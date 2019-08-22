@@ -14,16 +14,31 @@ $(() => {
   $('#recordings-page').hide()
   $('#calendar-page').hide()
   events.addHandlers()
-  setTimeout(function () {
-    $('#spotify-player').removeClass('disappear')
-    $('#blurb2').removeClass('disappear')
-  }, 1000)
-  setTimeout(function () {
-    $('#blurb3').removeClass('disappear')
-  }, 2000)
-  setTimeout(function () {
-    $('#blurb4').removeClass('disappear')
-  }, 2500)
+  const blurbs = function () {
+    setTimeout(function () {
+      $('#spotify-player').removeClass('disappear')
+      $('#blurb2').removeClass('disappear')
+    }, 1000)
+    setTimeout(function () {
+      $('#blurb3').removeClass('disappear')
+    }, 2000)
+    setTimeout(function () {
+      $('#blurb4').removeClass('disappear')
+    }, 2500)
+  }
+  $(document).ready(function () {
+    blurbs()
+  })
+  // setTimeout(function () {
+  //   $('#spotify-player').removeClass('disappear')
+  //   $('#blurb2').removeClass('disappear')
+  // }, 1000)
+  // setTimeout(function () {
+  //   $('#blurb3').removeClass('disappear')
+  // }, 2000)
+  // setTimeout(function () {
+  //   $('#blurb4').removeClass('disappear')
+  // }, 2500)
   api.indexGigs()
     .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: responseData.gigs })))
     .then((responseData) => console.log('We got gigs!' + responseData))

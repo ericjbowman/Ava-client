@@ -18,6 +18,8 @@ $darkGreen: #388600;
 $brass: #d7bb67;
 $brassPurple: #BB67D7;
 
+$cream: #FAF6EC;
+
 .home-background {
   background-image: url('../public/Ava1.jpg');
   background-size: cover;
@@ -452,9 +454,9 @@ $brassPurple: #BB67D7;
 }
 
 .gig {
-  padding: 1.5em;
+  // padding: 1.5em;
   width: 75%;
-  background-color: rgba(15, 15, 15, 0.9);
+  background-color: $cream;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -467,13 +469,20 @@ $brassPurple: #BB67D7;
 .gig-details, .gig-title, .gig-description {
   // -webkit-font-smoothing: antialiased;
   font-family: 'Lora', serif;
-  color: $glasses;
+  // color: $glasses;
 }
 
+.gig-title-container {
+  padding: 1.5em;
+  background-color: $purple;
+  border-radius: 10px 10px 0 0
+}
 .gig-title {
   // font-family: 'Raleway', sans-serif;
   // color: $glasses;
-  margin-bottom: 0.5em;
+  // background-color: $purple;
+  color: $cream;
+  // margin-bottom: 0.5em;
 }
 
 .gig-description {
@@ -492,10 +501,14 @@ $brassPurple: #BB67D7;
   margin-bottom: 3em;
 }
 
+.gig-content-container {
+  padding: 1.5em;
+}
+
 hr {
-  background-color: $darkGlasses;
+  background-color: $purple;
 }
 
 .material-icons {
-  color: $glasses;
+  color: $purple;
 }
