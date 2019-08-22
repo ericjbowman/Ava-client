@@ -22,24 +22,28 @@ $brassPurple: #BB67D7;
   background-image: url('../public/Ava1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .recordings-background {
   background-image: url('../public/Record.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .students-background {
   background-image: url('../public/Students4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .calendar-background {
   background-image: url('../public/Symphony.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .navbar-brand {
@@ -60,6 +64,7 @@ $brassPurple: #BB67D7;
   font-family: alice, serif;
   font-size: 20px;
   color: $brass;
+  transition: .5s;
 }
 
 .selected {
@@ -69,6 +74,7 @@ $brassPurple: #BB67D7;
 .text {
   font-family: alice, serif;
   color: $white;
+  -webkit-font-smoothing: antialiased;
 }
 
 .nav-link:hover {
@@ -382,6 +388,38 @@ $brassPurple: #BB67D7;
   animation: flipInY 1s;
 }
 
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation: slideInUp 2s;
+}
+
 .disappear {
   display: none;
 }
@@ -421,13 +459,27 @@ $brassPurple: #BB67D7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.gig-details, .gig-title {
+.gig-details {
+  font-size: 1.5em;
+}
+.gig-details, .gig-title, .gig-description {
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
   font-family: alice, serif;
   color: $glasses;
+}
+
+.gig-description {
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3em;
+}
+
+.gigs-container {
+  margin-top: 7em;
 }
 
 .gig-container {
   display: flex;
   justify-content: center;
-  margin-top: 7em;
+  margin-bottom: 3em;
 }
