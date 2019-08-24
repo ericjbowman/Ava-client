@@ -13,6 +13,7 @@ const api = require('./api.js')
 $(() => {
   $('#recordings-page').hide()
   $('#calendar-page').hide()
+  $('#contact-page').hide()
   events.addHandlers()
   const blurbs = function () {
     setTimeout(function () {

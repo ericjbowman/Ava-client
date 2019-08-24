@@ -50,7 +50,7 @@ $cream: #FDFCF8;
 }
 
 .navbar-brand {
-  font-family: euphoria-script, sans-serif;
+  font-family: euphoria-script, cursive;
   font-size: 40px;
   transition: .3s;
 }
@@ -464,10 +464,13 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .third-of-page {
+    width: 90%;
+  }
 }
 
 .nav-item {
-  margin-right: 4em;
+  margin-right: 3em;
 }
 
 .concerto-container {
@@ -480,7 +483,7 @@ a:hover {
   background-color: #fdfcf8;
   background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
   border-radius: 10px;
-  box-shadow: -5px -5px 8px rgba(15, 15, 15, 0.8);
+  box-shadow: -5px -5px 10px rgba(15, 15, 15, 0.8);
 }
 
 .gig-details {
@@ -545,4 +548,42 @@ hr {
   .last-item {
     margin-bottom: 0;
   }
+}
+
+.contactField, .send {
+  width: 100%;
+}
+
+.get-in-touch {
+  text-align: center;
+}
+
+.contactField {
+  margin: 0.5em 0 0 0;
+  border-radius: .25rem;
+  border: none;
+  padding: 0.5em;
+}
+
+.message-body {
+  height: 150px;
+}
+
+.send {
+  margin: 0 auto;
+}
+
+#contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.third-of-page {
+  width: 40%;
+  height: 100%;
+  margin: 7em 0 0 3em;
+}
+
+.get-in-touch {
+  font-family: 'Lora', serif;
 }

@@ -45,6 +45,23 @@ const onClickStudents = function () {
   $('body').addClass('students-background')
 }
 
+const onClickContact = function () {
+  $('#home').removeClass('selected')
+  $('#recordings').removeClass('selected')
+  $('#calendar').removeClass('selected')
+  $('#students').removeClass('selected')
+  $('#contact').addClass('selected')
+  $('#home-page').hide()
+  $('#recordings-page').hide()
+  $('#calendar-page').hide()
+  $('#students-page').hide()
+  $('#contact-page').show()
+  $('body').removeClass('home-background')
+  $('body').removeClass('recordings-background')
+  $('body').removeClass('calendar-background')
+  $('body').addClass('students-background')
+}
+
 const onClickCalendar = function () {
   $('#home').removeClass('selected')
   $('#students').removeClass('selected')
@@ -90,12 +107,12 @@ const adjustNavPadding = function () {
 }
 
 const addHandlers = () => {
-  // $('body').on('click', adjustNavPadding)
   $('.navbar-toggler').on('click', adjustNavPadding)
   $('#recordings').on('click', onClickRecordings)
   $('#home').on('click', onClickHome)
   $('#calendar').on('click', onClickCalendar)
   $('#students').on('click', onClickStudents)
+  $('#contact').on('click', onClickContact)
 }
 
 module.exports = {

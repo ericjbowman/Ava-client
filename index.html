@@ -35,8 +35,11 @@
             <li class="nav-item">
               <a id="bio" class="nav-linkX" href="#">Bio</a>
             </li>
-            <li class="nav-item last-item">
+            <li class="nav-item">
               <a id="students" class="nav-linkX" href="#">Students</a>
+            </li>
+            <li class="nav-item last-item">
+              <a id="contact" class="nav-linkX" href="#">Contact</a>
             </li>
             <!-- <li>
               <iframe id="follow" src="https://open.spotify.com/follow/1/?uri=spotify:artist:5nPqCoGKbrx9DZEVnZ8kJY&size=detail&theme=light&show-count=0" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
@@ -92,5 +95,23 @@
       <section id="calendar-page">
         <div class="gigs-container">
         </div>
+      </section>
+      <section id="contact-page">
+        <div class="third-of-page">
+          <div id="contact">
+            <h2 class="get-in-touch">Let's Get in Touch!</h2>
+              <div id="contact-form">
+                <form method="POST" action="https://formspree.io/ericjbowman@yahoo.com" data-aos="zoom-out" data-aos-easing="linear"
+                  data-aos-duration="300">
+                  <input type="hidden" name="_subject" value="Contact request from personal website" />
+                  <input type="text" name="_name" class="contactField" placeholder="Your name" required>
+                  <input type="email" name="_replyto" class="contactField" placeholder="Your email" required>
+                  <textarea name="message" class="contactField message-body" placeholder="Your message" required></textarea>
+                  <button type="submit" class="btn btn-primary send">Send</button>
+                </form>
+              </div>
+          </div>
+        </div>
+      </section>
     </body>
 </html>
