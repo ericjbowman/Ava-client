@@ -440,7 +440,7 @@ a:hover {
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
-  animation: slideInUp 2s;
+  animation: slideInUp 1s;
 }
 
 .disappear {
@@ -477,9 +477,10 @@ a:hover {
 .gig {
   // padding: 1.5em;
   width: 75%;
-  background-color: $cream;
+  background-color: #fdfcf8;
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
   border-radius: 10px;
-  box-shadow: 5px 5px 8px rgb(10, 10, 10);
+  box-shadow: -5px -5px 8px rgba(15, 15, 15, 0.8);
 }
 
 .gig-details {
@@ -495,8 +496,9 @@ a:hover {
 
 .gig-title-container {
   padding: 1.5em;
-  background-color: $purple;
-  // border: 2px solid #D9BFEE;
+  background-color: #6700ba;
+  background-image: url("https://www.transparenttextures.com/patterns/egg-shell.png");
+  border-bottom: 5px solid #D9BFEE;
   border-radius: 10px 10px 0 0
 }
 .gig-title {
