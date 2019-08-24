@@ -17,13 +17,15 @@ const onClickRecordings = function () {
   $('body').removeClass('calendar-background')
   $('body').addClass('recordings-background')
   const flipPlayers = function () {
-    $('#mvt-1').removeClass('disappear')
     setTimeout(function () {
-      $('#mvt-2').removeClass('disappear')
+      $('#mvt-1').removeClass('disappear')
     }, 500)
     setTimeout(function () {
-      $('#mvt-3').removeClass('disappear')
+      $('#mvt-2').removeClass('disappear')
     }, 1000)
+    setTimeout(function () {
+      $('#mvt-3').removeClass('disappear')
+    }, 1500)
   }
   $(document).ready(function () {
     flipPlayers()

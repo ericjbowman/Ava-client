@@ -553,6 +553,10 @@ hr {
   padding: 0.5em;
 }
 
+.contactField:focus {
+  outline: none;
+}
+
 .message-body {
   height: 150px;
 }
