@@ -52,6 +52,7 @@ $cream: #FDFCF8;
 .navbar-brand {
   font-family: euphoria-script, sans-serif;
   font-size: 40px;
+  transition: .3s;
 }
 
 #navbar-brand {
@@ -70,7 +71,7 @@ $cream: #FDFCF8;
 // }
 
 .navbar-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(215, 187, 103, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=d7bb67');
 }
 
 .navbar-toggler.navbar-toggler {
@@ -85,7 +86,7 @@ $cream: #FDFCF8;
   font-family: alice, serif;
   font-size: 1.3em;
   color: $brass;
-  transition: .5s;
+  transition: .3s;
 }
 
 .selected {
@@ -99,7 +100,7 @@ $cream: #FDFCF8;
 }
 
 a:hover {
-  color: #BB67D7 !important;
+  color: #BB67D7;
   text-decoration: none;
 }
 
