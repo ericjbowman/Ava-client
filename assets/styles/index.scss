@@ -19,7 +19,7 @@ $darkGreen: #388600;
 $brass: #d7bb67;
 $brassPurple: #BB67D7;
 
-$cream: #FAF6EC;
+$cream: #FDFCF8;
 
 .home-background {
   background-image: url('../public/Ava1.jpg');
@@ -63,7 +63,23 @@ $cream: #FAF6EC;
   background-color: rgba(15, 15, 15, 0.8)
 }
 
-.nav-link {
+// .navbar-toggler {
+//   background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+// }
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(215, 187, 103, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler.navbar-toggler:focus {
+  outline: none;
+}
+
+.nav-linkX {
   font-family: alice, serif;
   font-size: 20px;
   color: $brass;
@@ -80,8 +96,9 @@ $cream: #FAF6EC;
   -webkit-font-smoothing: antialiased;
 }
 
-.nav-link:hover {
-  color: #BB67D7;
+a:hover {
+  color: #BB67D7 !important;
+  text-decoration: none;
 }
 
 // #navbarNav {
