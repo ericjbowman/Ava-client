@@ -457,18 +457,6 @@ a:hover {
   margin-bottom: 3em;
 }
 
-@media only screen and (max-width: 600px) {
-  .home-background {
-    background-image: url('../public/AvaMobile.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .third-of-page {
-    width: 90%;
-  }
-}
-
 .nav-item {
   margin-right: 3em;
 }
@@ -578,12 +566,42 @@ hr {
   margin: 0 auto;
 }
 
-.third-of-page {
-  width: 40%;
-  height: 100%;
-  margin: 7em 0 0 3em;
-}
-
 .get-in-touch {
   font-family: 'Lora', serif;
+}
+
+.third-of-page {
+  width: 40%;
+  margin: 7em 1em 1em 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .home-background {
+    background-image: url('../public/AvaMobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .third-of-page {
+    width: 90%;
+    margin: 7em 1em 1em 1em;
+  }
+  .blurb {
+    display: none;
+  }
+  .calendar-background, .recordings-background, .students-background {
+    background-position: center;
+  }
+  .gig {
+    width: 90%;
+  }
+  // .blurb {
+  //   width: 90%;
+  // }
+  // #blurb1 {
+  //   margin: 7em 1em 1em;
+  // }
+  // #blurb2, #blurb3, #blurb4 {
+  //   margin: 1em;
+  // }
 }
