@@ -534,3 +534,13 @@ hr {
 .material-icons {
   color: $purple;
 }
+
+.last-item {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .last-item {
+    margin-bottom: 0;
+  }
+}

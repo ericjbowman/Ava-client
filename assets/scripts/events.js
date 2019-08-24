@@ -75,7 +75,23 @@ const onClickHome = function () {
   $('body').addClass('home-background')
 }
 
+const adjustNavPadding = function () {
+  setTimeout(function () {
+    const isExpanded = $('.navbar-toggler').attr('aria-expanded')
+    console.log(isExpanded)
+    if (isExpanded === 'true') {
+      // alert('expanded')
+      $('#students').addClass('padded-item')
+    } else {
+      $('#students').removeClass('padded-item')
+      // alert('not expanded')
+    }
+  }, 1000)
+}
+
 const addHandlers = () => {
+  // $('body').on('click', adjustNavPadding)
+  $('.navbar-toggler').on('click', adjustNavPadding)
   $('#recordings').on('click', onClickRecordings)
   $('#home').on('click', onClickHome)
   $('#calendar').on('click', onClickCalendar)
