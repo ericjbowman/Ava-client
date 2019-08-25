@@ -50,7 +50,8 @@ $cream: #FDFCF8;
 }
 
 .bio-background {
-  background-color: #1D0032;
+  // background-color: #1D0032;
+  background-color: $darkGlasses;
   background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
 }
 
@@ -624,17 +625,42 @@ hr {
 
 #bio-page {
   margin-top: 86px;
-  display: flex;
-  justify-content: flex-end;
 }
 
 #carouselExampleControls {
+  margin-top: 1em;
   width: 500px;
   height: 500px;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5), -4px -4px 10px 0 rgba(0, 0, 0, 0.5);
+  // display: inline-block;
+  // position: fixed;
 }
 
 .d-block {
   height: 500px;
   width: auto;
+}
+
+#bio-container {
+  background-color: rgba(15, 15, 15, 0.5);
+  margin: 1em;
+  padding: 1em;
+  width: 50%;
+  display: inline-block;
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.3), -4px -4px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+#carousel-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  display: inline-block;
+}
+
+.bio-paragraph {
+  color: $cream;
+  font-family: 'Lora', serif;
+  display: inline;
+  margin-bottom: 1em;
 }
