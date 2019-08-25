@@ -14,6 +14,7 @@ $(() => {
   $('#recordings-page').hide()
   $('#calendar-page').hide()
   $('#contact-page').hide()
+  $('#bio-page').hide()
   events.addHandlers()
   const blurbs = function () {
     setTimeout(function () {

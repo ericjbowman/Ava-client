@@ -1,21 +1,21 @@
+const showAndHideContent = function (show) {
+  const pagesArr = ['home', 'recordings', 'calendar', 'bio', 'students', 'contact']
+  const hiddenPagesArr = pagesArr.filter(page => page !== show)
+  hiddenPagesArr.forEach(page => {
+    $(`#${page}`).removeClass('selected')
+    $(`#${page}-page`).hide()
+    $('body').removeClass(`${page}-background`)
+  })
+  $(`#${show}`).addClass('selected')
+  $(`#${show}-page`).show()
+  $('body').addClass(`${show}-background`)
+}
+
 const onClickRecordings = function () {
   $('.navbar-toggler').attr('aria-expanded', 'false')
   $('#mvt-2').addClass('disappear')
   $('#mvt-3').addClass('disappear')
-  $('#home').removeClass('selected')
-  $('#students').removeClass('selected')
-  $('#contact').removeClass('selected')
-  $('#calendar').removeClass('selected')
-  $('#recordings').addClass('selected')
-  $('#home-page').hide()
-  $('#students-page').hide()
-  $('#calendar-page').hide()
-  $('#contact-page').hide()
-  $('#recordings-page').show()
-  $('body').removeClass('home-background')
-  $('body').removeClass('students-background')
-  $('body').removeClass('calendar-background')
-  $('body').addClass('recordings-background')
+  showAndHideContent('recordings')
   const flipPlayers = function () {
     setTimeout(function () {
       $('#mvt-1').removeClass('disappear')
@@ -36,71 +36,23 @@ const onClickRecordings = function () {
 }
 
 const onClickStudents = function () {
-  $('#home').removeClass('selected')
-  $('#recordings').removeClass('selected')
-  $('#contact').removeClass('selected')
-  $('#calendar').removeClass('selected')
-  $('#students').addClass('selected')
-  $('#home-page').hide()
-  $('#recordings-page').hide()
-  $('#calendar-page').hide()
-  $('#contact-page').hide()
-  $('#students-page').show()
-  $('body').removeClass('home-background')
-  $('body').removeClass('recordings-background')
-  $('body').removeClass('calendar-background')
-  $('body').addClass('students-background')
+  showAndHideContent('students')
 }
 
 const onClickContact = function () {
-  $('#home').removeClass('selected')
-  $('#recordings').removeClass('selected')
-  $('#calendar').removeClass('selected')
-  $('#students').removeClass('selected')
-  $('#contact').addClass('selected')
-  $('#home-page').hide()
-  $('#recordings-page').hide()
-  $('#calendar-page').hide()
-  $('#students-page').hide()
-  $('#contact-page').show()
-  $('body').removeClass('home-background')
-  $('body').removeClass('recordings-background')
-  $('body').removeClass('calendar-background')
-  $('body').addClass('students-background')
+  showAndHideContent('contact')
 }
 
 const onClickCalendar = function () {
-  $('#home').removeClass('selected')
-  $('#students').removeClass('selected')
-  $('#recordings').removeClass('selected')
-  $('#contact').removeClass('selected')
-  $('#calendar').addClass('selected')
-  $('#home-page').hide()
-  $('#recordings-page').hide()
-  $('#students-page').hide()
-  $('#contact-page').hide()
-  $('#calendar-page').show()
-  $('body').removeClass('home-background')
-  $('body').removeClass('recordings-background')
-  $('body').removeClass('students-background')
-  $('body').addClass('calendar-background')
+  showAndHideContent('calendar')
+}
+
+const onClickBio = function () {
+  showAndHideContent('bio')
 }
 
 const onClickHome = function () {
-  $('#recordings').removeClass('selected')
-  $('#students').removeClass('selected')
-  $('#calendar').removeClass('selected')
-  $('#contact').removeClass('selected')
-  $('#home').addClass('selected')
-  $('#recordings-page').hide()
-  $('#calendar-page').hide()
-  $('#students-page').hide()
-  $('#contact-page').hide()
-  $('#home-page').show()
-  $('body').removeClass('recordings-background')
-  $('body').removeClass('calendar-background')
-  $('body').removeClass('students-background')
-  $('body').addClass('home-background')
+  showAndHideContent('home')
 }
 
 const adjustNavPadding = function () {
@@ -122,6 +74,7 @@ const addHandlers = () => {
   $('#recordings').on('click', onClickRecordings)
   $('#home').on('click', onClickHome)
   $('#calendar').on('click', onClickCalendar)
+  $('#bio').on('click', onClickBio)
   $('#students').on('click', onClickStudents)
   $('#contact').on('click', onClickContact)
 }

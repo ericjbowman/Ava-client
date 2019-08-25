@@ -22,14 +22,14 @@ $brassPurple: #BB67D7;
 $cream: #FDFCF8;
 
 .home-background {
-  background-image: url('../public/Ava1.jpg');
+  background-image: url('../public/AvaLowRes2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .recordings-background {
-  background-image: url('../public/Record.jpg');
+  background-image: url('../public/RecordLowRes.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -43,7 +43,19 @@ $cream: #FDFCF8;
 }
 
 .calendar-background {
-  background-image: url('../public/Symphony.jpg');
+  background-image: url('../public/SymphonyLowRes.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.bio-background {
+  background-color: #1D0032;
+  background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+}
+
+.contact-background {
+  background-image: url('../public/Students4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -608,4 +620,21 @@ hr {
   // #blurb2, #blurb3, #blurb4 {
   //   margin: 1em;
   // }
+}
+
+#bio-page {
+  margin-top: 86px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#carouselExampleControls {
+  width: 500px;
+  height: 500px;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5), -4px -4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.d-block {
+  height: 500px;
+  width: auto;
 }
