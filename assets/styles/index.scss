@@ -27,7 +27,6 @@ $cream: #FDFCF8;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
 }
 
 .recordings-background {
@@ -36,6 +35,7 @@ $cream: #FDFCF8;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .students-background {
@@ -44,6 +44,7 @@ $cream: #FDFCF8;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .calendar-background {
@@ -52,6 +53,7 @@ $cream: #FDFCF8;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .bio-background {
@@ -674,6 +676,9 @@ hr {
   }
   .message-body {
     height: 105px;
+  }
+  .home-background {
+    background-position: center center;
   }
 }
 
