@@ -56,10 +56,10 @@ $cream: #FDFCF8;
 }
 
 .contact-background {
-  background-image: url('../public/Students4.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: black;
+  // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/dotnoise-light-grey.png");
+  background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
 }
 
 .navbar-brand {
@@ -551,6 +551,16 @@ hr {
   }
 }
 
+#contact-page {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-page-content {
+  display: flex;
+  justify-content: space-around;
+}
+
 .contactField, .send {
   width: 100%;
 }
@@ -571,7 +581,7 @@ hr {
 }
 
 .message-body {
-  height: 150px;
+  height: 305px;
 }
 
 .send {
@@ -584,54 +594,27 @@ hr {
 }
 
 .get-in-touch {
-  font-family: 'Lora', serif;
+  font-family: alice, serif;
+  color: $brass;
 }
 
 .third-of-page {
-  width: 40%;
-  margin: 7em 1em 1em 1em;
+  width: 50%;
+  margin: 3em 0 3em 2em;
+  // background-color: $purple;
+  // display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
-  .home-background {
-    background-image: url('../public/AvaMobile.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .third-of-page {
-    width: 90%;
-    margin: 7em 1em 1em 1em;
-  }
-  .blurb {
-    display: none;
-  }
-  .calendar-background, .recordings-background, .students-background {
-    background-position: center;
-  }
-  .gig {
-    width: 90%;
-  }
-  // .blurb {
-  //   width: 90%;
-  // }
-  // #blurb1 {
-  //   margin: 7em 1em 1em;
-  // }
-  // #blurb2, #blurb3, #blurb4 {
-  //   margin: 1em;
-  // }
-}
-
-#bio-page {
+#bio-page, #contact-page {
   margin-top: 86px;
 }
 
 #carouselExampleControls {
-  margin-top: 1em;
+  margin-top: 3em;
   width: 500px;
   height: 500px;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5), -4px -4px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: .25rem;
   // display: inline-block;
   // position: fixed;
 }
@@ -654,8 +637,8 @@ hr {
   width: 50%;
   display: flex;
   justify-content: center;
-  position: fixed;
-  display: inline-block;
+  // position: fixed;
+  // display: inline-block;
 }
 
 .bio-paragraph {
@@ -663,4 +646,66 @@ hr {
   font-family: 'Lora', serif;
   display: inline;
   margin-bottom: 1em;
+}
+
+.contactField {
+  box-shadow: 4px 4px 15px 0 rgba(0, 0, 0, 0.3), -4px -4px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+#contact-page-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1055px) {
+  #carouselExampleControls {
+    width: 300px;
+    height: 300px;
+  }
+  .d-block {
+    height: 300px;
+    width: auto;
+  }
+  .message-body {
+    height: 105px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-background {
+    background-image: url('../public/AvaMobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .third-of-page {
+    width: 90%;
+    margin: 1em;
+  }
+  .blurb {
+    display: none;
+  }
+  .calendar-background, .recordings-background, .students-background {
+    background-position: center;
+  }
+  .gig {
+    width: 90%;
+  }
+
+  #carousel-container {
+    display: none;
+  }
+  .message-body {
+    height: 305px;
+  }
+  // .blurb {
+  //   width: 90%;
+  // }
+  // #blurb1 {
+  //   margin: 7em 1em 1em;
+  // }
+  // #blurb2, #blurb3, #blurb4 {
+  //   margin: 1em;
+  // }
 }
