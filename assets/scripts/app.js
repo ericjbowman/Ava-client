@@ -42,7 +42,7 @@ $(() => {
   //   $('#blurb4').removeClass('disappear')
   // }, 2500)
   api.indexGigs()
-    .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: responseData.gigs })))
+    .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: responseData.gigs.reverse() })))
     .then((responseData) => console.log('We got gigs!' + responseData))
     .catch(console.log)
 })
