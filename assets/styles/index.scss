@@ -66,7 +66,20 @@ $cream: #FDFCF8;
   background-color: black;
   // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
   // background-image: url("https://www.transparenttextures.com/patterns/dotnoise-light-grey.png");
-  background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
+  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+}
+
+#login-background {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  // background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/dotnoise-light-grey.png");
+  // background-image: url("https://www.transparenttextures.com/patterns/stucco.png");
+  background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
 }
 
 .navbar-brand {
@@ -718,4 +731,38 @@ hr {
   // #blurb2, #blurb3, #blurb4 {
   //   margin: 1em;
   // }
+}
+
+.initLog {
+  justify-content: center;
+  margin-top: -3em;
+  width: 33%;
+}
+
+.third {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.initLog-headers {
+  margin-bottom: 1em;
+  text-align: center;
+  // font-family: alice, serif;
+  font-family: 'Lora', serif;
+  // font-size: 1.3em;
+  color: $brass;
+}
+
+.btn, input {
+    font-family: 'Lora', serif;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
 }

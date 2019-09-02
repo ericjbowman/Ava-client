@@ -10,6 +10,15 @@ const indexGigs = () => {
   })
 }
 
+const signIn = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/sign-in',
+    method: 'POST',
+    data
+  })
+}
+
 module.exports = {
-  indexGigs
+  indexGigs,
+  signIn
 }

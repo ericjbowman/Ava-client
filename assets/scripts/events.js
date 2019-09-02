@@ -1,3 +1,6 @@
+const getFormFields = require(`../../lib/get-form-fields`)
+const api = require('./api')
+
 const showAndHideContent = function (show) {
   const pagesArr = ['home', 'recordings', 'calendar', 'bio', 'students', 'contact']
   const hiddenPagesArr = pagesArr.filter(page => page !== show)
@@ -69,6 +72,14 @@ const adjustNavPadding = function () {
   }, 1000)
 }
 
+const onSignIn = function (event) {
+  event.preventDefault()
+  const data = getFormFields(this)
+  api.signIn(data)
+    .then(console.log)
+    .catch(console.log)
+}
+
 const addHandlers = () => {
   $('.navbar-toggler').on('click', adjustNavPadding)
   $('#recordings').on('click', onClickRecordings)
@@ -77,6 +88,7 @@ const addHandlers = () => {
   $('#bio').on('click', onClickBio)
   $('#students').on('click', onClickStudents)
   $('#contact').on('click', onClickContact)
+  $('#sign-in').on('submit', onSignIn)
 }
 
 module.exports = {
