@@ -1,5 +1,7 @@
 const getFormFields = require(`../../lib/get-form-fields`)
 const api = require('./api')
+const editGigs = require('./templates/edit-gigs.handlebars')
+const store = require('./store')
 
 const showAndHideContent = function (show) {
   const pagesArr = ['home', 'recordings', 'calendar', 'bio', 'students', 'contact']
@@ -73,11 +75,44 @@ const adjustNavPadding = function () {
 }
 
 const onSignIn = function (event) {
+  $('.load-log').removeClass('disappear')
   event.preventDefault()
   const data = getFormFields(this)
+  console.log('sign in data', data)
   api.signIn(data)
-    .then(console.log)
+    .then(signInSuccess)
     .catch(console.log)
+}
+
+const signInSuccess = function (data) {
+  store.user = data.user
+  api.indexGigs()
+    .then((responseData) => $('#handlebar-gigs').html(editGigs({ gigs: responseData.gigs.reverse() })))
+    .catch(console.log)
+  $('.initLog').hide()
+  $('#signInSuccess').removeClass('disappear')
+  $('.login-background').addClass('login-background2')
+  $('.login-background2').removeClass('login-background')
+}
+
+class Gig {
+  constructor (data) {
+    this.gig = {
+      title: data.title,
+      date: data.date,
+      time: data.time,
+      place: data.place,
+      text: data.text
+    }
+  }
+}
+
+const onCreateGig = function (event) {
+  event.preventDefault()
+  const data = getFormFields(this)
+  const gig = new Gig(data.gig)
+  api.createGig(gig)
+    .then(signInSuccess)
 }
 
 const addHandlers = () => {
@@ -89,6 +124,7 @@ const addHandlers = () => {
   $('#students').on('click', onClickStudents)
   $('#contact').on('click', onClickContact)
   $('#sign-in').on('submit', onSignIn)
+  $('#create-gig').on('submit', onCreateGig)
 }
 
 module.exports = {

@@ -1,6 +1,7 @@
 'use strict'
 
 const indexDisplay = require('./templates/index-gigs.handlebars')
+const editGigs = require('./templates/edit-gigs.handlebars')
 const events = require('./events.js')
 const api = require('./api.js')
 
@@ -43,6 +44,6 @@ $(() => {
   // }, 2500)
   api.indexGigs()
     .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: responseData.gigs.reverse() })))
-    .then((responseData) => console.log('We got gigs!' + responseData))
+    .then((responseData) => $('#signInSuccess').html(editGigs({ gigs: responseData.gigs.reverse() })))
     .catch(console.log)
 })
