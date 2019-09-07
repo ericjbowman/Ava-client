@@ -84,8 +84,7 @@ const onSignIn = function (event) {
     .catch(console.log)
 }
 
-const signInSuccess = function (data) {
-  store.user = data.user
+const indexGigs = function () {
   api.indexGigs()
     .then((responseData) => $('#handlebar-gigs').html(editGigs({ gigs: responseData.gigs.reverse() })))
     .catch(console.log)
@@ -95,11 +94,16 @@ const signInSuccess = function (data) {
   $('.login-background2').removeClass('login-background')
 }
 
+const signInSuccess = function (data) {
+  store.user = data.user
+  indexGigs()
+}
+
 class Gig {
   constructor (data) {
     this.gig = {
       title: data.title,
-      date: data.date,
+      date: data.date.toString(),
       time: data.time,
       place: data.place,
       text: data.text
@@ -110,9 +114,25 @@ class Gig {
 const onCreateGig = function (event) {
   event.preventDefault()
   const data = getFormFields(this)
+  console.log('date parse: ', Date.parse(data.gig.date))
+  // const seconds = Date.parse(data.gig.date).toLocaleString()
+  // const d = new Date(Date.parse(data.gig.date) + 18000000)
+  // console.log('d should work', d)
+  // console.log('date', data.gig.date.toString())
   const gig = new Gig(data.gig)
   api.createGig(gig)
-    .then(signInSuccess)
+    .then(indexGigs)
+}
+
+const onEditGig = function (event) {
+  event.preventDefault()
+  const data = getFormFields(this)
+  console.log('form fields', data)
+  const gig = new Gig(data.gig)
+  const gigId = $(event.target).data('id')
+  console.log('gigId', gigId)
+  api.updateGig(gig, gigId)
+    .then(indexGigs)
 }
 
 const addHandlers = () => {
@@ -125,6 +145,10 @@ const addHandlers = () => {
   $('#contact').on('click', onClickContact)
   $('#sign-in').on('submit', onSignIn)
   $('#create-gig').on('submit', onCreateGig)
+  // const gigId = $(event.target).data('id')
+  // $(`edit-${gigId}`).on('submit', onEditGig)
+  $('#handlebar-gigs').on('submit', '.update-gig', onEditGig)
+  // $('#create-form').on('submit', '#update-survey', surveyEvents.onUpdateSurvey)
 }
 
 module.exports = {

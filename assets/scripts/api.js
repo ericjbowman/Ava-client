@@ -21,6 +21,17 @@ const createGig = (data) => {
   })
 }
 
+const updateGig = (data, gigId) => {
+  return $.ajax({
+    url: config.apiUrl + '/gigs/' + gigId,
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
+    data: data
+  })
+}
+
 const signIn = function (data) {
   return $.ajax({
     url: config.apiUrl + '/sign-in',
@@ -32,5 +43,6 @@ const signIn = function (data) {
 module.exports = {
   indexGigs,
   createGig,
+  updateGig,
   signIn
 }
