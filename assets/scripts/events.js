@@ -122,6 +122,7 @@ const onCreateGig = function (event) {
   const gig = new Gig(data.gig)
   api.createGig(gig)
     .then(indexGigs)
+    .then(() => alert('success'))
 }
 
 const onEditGig = function (event) {
@@ -130,9 +131,18 @@ const onEditGig = function (event) {
   console.log('form fields', data)
   const gig = new Gig(data.gig)
   const gigId = $(event.target).data('id')
-  console.log('gigId', gigId)
   api.updateGig(gig, gigId)
     .then(indexGigs)
+    .then(() => alert('success'))
+}
+
+const onDeleteGig = function (event) {
+  event.preventDefault()
+  const gigId = $(event.target).data('id')
+  console.log('Delete gigId', gigId)
+  api.deleteGig(gigId)
+    .then(indexGigs)
+    .then(() => alert('success'))
 }
 
 const addHandlers = () => {
@@ -145,10 +155,8 @@ const addHandlers = () => {
   $('#contact').on('click', onClickContact)
   $('#sign-in').on('submit', onSignIn)
   $('#create-gig').on('submit', onCreateGig)
-  // const gigId = $(event.target).data('id')
-  // $(`edit-${gigId}`).on('submit', onEditGig)
   $('#handlebar-gigs').on('submit', '.update-gig', onEditGig)
-  // $('#create-form').on('submit', '#update-survey', surveyEvents.onUpdateSurvey)
+  $('#handlebar-gigs').on('click', '.delete-btn', onDeleteGig)
 }
 
 module.exports = {

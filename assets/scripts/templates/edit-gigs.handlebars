@@ -10,7 +10,9 @@
         <input class='input-gig-detail' type="text" name="gig[text]" value='{{gig.text}}'>
         <div class="buttons">
           <input id='edit-{{gig._id}}' type="submit" value="Edit" class="btn btn-info edit-btn">
-          <button id='btn-{{gig._id}}' class="btn btn-danger delete-btn">Delete</button>
+          <button id='btn-{{gig._id}}' class="btn btn-danger delete-btn" data-id={{gig._id}}>
+            Delete
+          </button>
         </div>
       </form>
     </div>
