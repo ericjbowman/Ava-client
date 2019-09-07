@@ -32,6 +32,16 @@ const updateGig = (data, gigId) => {
   })
 }
 
+const deleteGig = (gigId) => {
+  return $.ajax({
+    url: config.apiUrl + '/gigs/' + gigId,
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
+  })
+}
+
 const signIn = function (data) {
   return $.ajax({
     url: config.apiUrl + '/sign-in',
@@ -44,5 +54,6 @@ module.exports = {
   indexGigs,
   createGig,
   updateGig,
+  deleteGig,
   signIn
 }
