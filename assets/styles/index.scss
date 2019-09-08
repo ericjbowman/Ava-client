@@ -271,8 +271,8 @@ a:hover {
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
-  animation: rubberBand 1.5s;
-  animation-delay: 1.5s;
+  animation: rubberBand 1s;
+  // animation-delay: 1.5s;
 }
 
 @-webkit-keyframes pulse {
@@ -708,44 +708,6 @@ hr {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .home-background {
-    background-image: url('public/AvaMobile.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .third-of-page {
-    width: 90%;
-    margin: 1em;
-  }
-  .blurb {
-    display: none;
-  }
-  .calendar-background, .recordings-background, .students-background {
-    background-position: center;
-  }
-  .gig {
-    width: 90%;
-  }
-
-  #carousel-container {
-    display: none;
-  }
-  .message-body {
-    height: 305px;
-  }
-  // .blurb {
-  //   width: 90%;
-  // }
-  // #blurb1 {
-  //   margin: 7em 1em 1em;
-  // }
-  // #blurb2, #blurb3, #blurb4 {
-  //   margin: 1em;
-  // }
-}
-
 .initLog {
   justify-content: center;
   margin-top: -3em;
@@ -874,4 +836,48 @@ circle {
   height: auto;
   margin: 1em 0;
   box-shadow: 2px 2px 6px 2px rgba(10, 10, 10, 0.2), -2px -2px 6px 2px rgba(10, 10, 10, 0.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .home-background {
+    background-image: url('public/AvaMobile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .third-of-page {
+    width: 90%;
+    margin: 1em;
+  }
+  .blurb {
+    display: none;
+  }
+  .calendar-background, .recordings-background, .students-background {
+    background-position: center;
+  }
+  .gig {
+    width: 90%;
+  }
+
+  #carousel-container {
+    display: none;
+  }
+  .message-body {
+    height: 305px;
+  }
+
+  .bio-pic-left, .bio-pic-right {
+    width: 100%;
+    height: auto;
+      box-shadow: 2px 2px 6px 2px rgba(10, 10, 10, 0.2), -2px -2px 6px 2px rgba(10, 10, 10, 0.2);
+  }
+  // .blurb {
+  //   width: 90%;
+  // }
+  // #blurb1 {
+  //   margin: 7em 1em 1em;
+  // }
+  // #blurb2, #blurb3, #blurb4 {
+  //   margin: 1em;
+  // }
 }
