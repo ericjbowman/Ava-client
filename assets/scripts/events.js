@@ -14,6 +14,7 @@ const showAndHideContent = function (show) {
   $(`#${show}`).addClass('selected')
   $(`#${show}-page`).show()
   $('body').addClass(`${show}-background`)
+  $('#overlay').removeClass('overlay')
 }
 
 const onClickRecordings = function () {
@@ -54,6 +55,7 @@ const onClickCalendar = function () {
 
 const onClickBio = function () {
   showAndHideContent('bio')
+  $('#overlay').addClass('overlay')
 }
 
 const onClickHome = function () {
