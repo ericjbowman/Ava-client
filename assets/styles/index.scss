@@ -852,6 +852,9 @@ circle {
   .blurb {
     display: none;
   }
+  #home-page {
+    margin-top: 86px;
+  }
   .calendar-background, .recordings-background, .students-background {
     background-position: center;
   }
@@ -869,7 +872,7 @@ circle {
   .bio-pic-left, .bio-pic-right {
     width: 100%;
     height: auto;
-      box-shadow: 2px 2px 6px 2px rgba(10, 10, 10, 0.2), -2px -2px 6px 2px rgba(10, 10, 10, 0.2);
+    box-shadow: 2px 2px 6px 2px rgba(10, 10, 10, 0.2), -2px -2px 6px 2px rgba(10, 10, 10, 0.2);
   }
   // .blurb {
   //   width: 90%;

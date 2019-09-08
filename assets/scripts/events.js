@@ -15,10 +15,10 @@ const showAndHideContent = function (show) {
   $(`#${show}-page`).show()
   $('body').addClass(`${show}-background`)
   $('#overlay').removeClass('overlay')
+  $('.navbar-toggler').attr('aria-expanded', 'false')
 }
 
 const onClickRecordings = function () {
-  $('.navbar-toggler').attr('aria-expanded', 'false')
   $('#mvt-2').addClass('disappear')
   $('#mvt-3').addClass('disappear')
   showAndHideContent('recordings')
