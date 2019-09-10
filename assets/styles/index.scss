@@ -184,7 +184,7 @@ a:hover {
 
 .spotify-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 3em 3em;
   // display: inline-block;
   // animation-duration: 1s;
@@ -499,7 +499,8 @@ a:hover {
 .movement {
   display: flex;
   justify-content: center;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding: 0.5em;
 }
 
 .nav-item {
@@ -852,6 +853,10 @@ circle {
   padding: 1em;
 }
 
+.margin-1 {
+  margin: 1em;
+}
+
 #coming-soon-title {
   font-family: lora;
   text-align: center;
@@ -863,6 +868,15 @@ circle {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .spotify-container {
+    margin: 0 1.5em;
+    display: block;
+  }
+
+  .margin-1 {
+    margin: 0 0 1em;
+    width: 100%;
   }
   .third-of-page {
     width: 90%;
