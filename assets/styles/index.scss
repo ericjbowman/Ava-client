@@ -196,7 +196,7 @@ a:hover {
 }
 
 .tilt-photo-right {
-  transform: rotate(7deg);
+  transform: rotate(5deg);
 }
 
 .tilt-photo-right-2 {
@@ -208,13 +208,51 @@ a:hover {
 }
 
 .tilt-photo-left {
-  transform: rotate(-7deg);
+  transform: rotate(-5deg);
 }
+
+.student-pic-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.move-up {
+  margin-top: -50px;
+}
+
+// .row-1-overlay {
+//   z-index: 10;
+// }
+//
+// .row-1-pic {
+//   z-index: 9;
+// }
 
 .student-photo {
   width: 500px;
   height: auto;
   box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.4);
+}
+
+.students-div {
+  display: block;
+}
+
+.student-videos {
+  margin-top: 1em;
+  width: 100%;
+  padding: 1em;
+}
+
+.student-video {
+  margin: 1em 0;
+}
+
+.flex-center {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pinup {
@@ -236,7 +274,7 @@ a:hover {
   // position: absolute;
   height: 400px;
   width: auto;
-  z-index: 0;
+  z-index: 1;
 }
 
 .pinup-overlay {
@@ -915,6 +953,20 @@ circle {
 }
 
 @media only screen and (max-width: 600px) {
+  .pinup {
+    height: 230px;
+  }
+
+  .pinup-contents {
+    height: 200px;
+  }
+
+  .pinup-overlay {
+    height: 250px;
+  }
+  .student-pic-row {
+    display: block;
+  }
   .home-background {
     background-image: url('public/Mobile.jpg');
     background-position: center;
