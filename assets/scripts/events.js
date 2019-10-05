@@ -22,20 +22,23 @@ const onClickRecordings = function () {
   $('#mvt-2').addClass('disappear')
   $('#mvt-3').addClass('disappear')
   showAndHideContent('recordings')
-  const flipPlayers = function () {
-    setTimeout(function () {
-      $('#mvt-1').removeClass('disappear')
-    }, 500)
-    setTimeout(function () {
-      $('#mvt-2').removeClass('disappear')
-    }, 1000)
-    setTimeout(function () {
-      $('#mvt-3').removeClass('disappear')
-    }, 1500)
-  }
-  $(document).ready(function () {
-    flipPlayers()
-  })
+  $('#mvt-1').removeClass('disappear')
+  $('#mvt-2').removeClass('disappear')
+  $('#mvt-3').removeClass('disappear')
+  // const flipPlayers = function () {
+  //   setTimeout(function () {
+  //     $('#mvt-1').removeClass('disappear')
+  //   }, 500)
+  //   setTimeout(function () {
+  //     $('#mvt-2').removeClass('disappear')
+  //   }, 1500)
+  //   setTimeout(function () {
+  //     $('#mvt-3').removeClass('disappear')
+  //   }, 2500)
+  // }
+  // $(document).ready(function () {
+  // flipPlayers()
+  // })
   // setTimeout(function () {
   //   $('#spotify-player').removeClass('disappear')
   // }, 1500)
