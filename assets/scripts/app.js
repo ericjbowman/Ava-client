@@ -20,11 +20,11 @@ $(() => {
   events.addHandlers()
   const blurbs = function () {
     setTimeout(function () {
-      $('#blurb2').removeClass('disappear')
+      $('#blurb3').removeClass('disappear')
     }, 1000)
     setTimeout(function () {
       $('#spotify-player').removeClass('disappear')
-      $('#blurb3').removeClass('disappear')
+      $('#blurb2').removeClass('disappear')
     }, 2000)
     setTimeout(function () {
       $('#blurb4').removeClass('disappear')
