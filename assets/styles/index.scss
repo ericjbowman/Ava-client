@@ -279,6 +279,7 @@ a:hover {
 }
 
 .student-video {
+  padding: 0;
   margin: 1em;
 }
 
@@ -1007,6 +1008,33 @@ circle {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .spotify-container {
+    display: block;
+    margin: 0;
+  }
+  .rec-row-1, .rec-row-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .spotify-container iframe {
+    width: 300px;
+    height: 408px;
+    margin: 0 auto;
+  }
+  .movement {
+    margin-bottom: 2em;
+  }
+  .movement iframe {
+    width: 300px;
+    height: 373px;
+  }
+  .rec-row-1, .rec-row-2 {
+    margin-bottom: 2em;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .rec-row-2 {
     display: flex;
@@ -1016,12 +1044,7 @@ circle {
     display: flex;
     justify-content: center;
   }
-  .movement iframe {
-    height: 373px;
-  }
-  .movement {
-    margin-bottom: 2em;
-  }
+
   .spotify-container {
     display: block;
     width: 100vw;
@@ -1031,9 +1054,6 @@ circle {
     width: 300px;
     height: 408px;
     margin: 0 auto;
-  }
-  .rec-row-1, .rec-row-2 {
-    margin-bottom: 2em;
   }
 
   .pinup {
