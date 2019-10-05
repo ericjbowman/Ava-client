@@ -203,9 +203,24 @@ a:hover {
 .spotify-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 6em 6em;
+  margin: 1em 6em 0;
   // display: inline-block;
   // animation-duration: 1s;
+}
+
+#rec-blurb {
+  width: 100%;
+  margin: 1em 0;
+}
+
+#rec-blurb-3 {
+  margin: 1em 6em;
+}
+
+.rec-blurb-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 6em;
 }
 
 #follow-container {
@@ -649,8 +664,12 @@ a:hover {
 
 .concerto-container {
   width: 100%;
-  margin: 8em 0 2em;
+  margin: 1em 0 0;
   padding: 0;
+}
+
+#rec-blurb-1 {
+  margin: 7em 6em 1em;
 }
 
 .gig {
@@ -1039,6 +1058,15 @@ circle {
   .rec-row-2 {
     display: flex;
     justify-content: center;
+  }
+  .rec-blurb-container, #rec-blurb-3 {
+    margin: 2em;
+  }
+  #bio-pic-1, #bio-pic-2 {
+    margin-bottom: 2em;
+  }
+  #rec-blurb {
+    margin: 0;
   }
   .vid-row {
     display: flex;
