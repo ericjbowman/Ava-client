@@ -139,6 +139,14 @@ $cream: #FDFCF8;
   color: $brassPurple;
 }
 
+.frame-bottom {
+  margin-top: 3em;
+  margin-right: 0;
+  height: 60px;
+  min-width: 100%;
+  width: 100vw;
+}
+
 .text {
   font-family: 'Lora', serif;
   color: $white;
@@ -238,14 +246,31 @@ a:hover {
   display: block;
 }
 
+#videos-header {
+  margin: 1em 0;
+}
+
 .student-videos {
-  margin-top: 1em;
+  // background-color: black;
+  // background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+  // margin-top: 3em;
+  // margin-bottom: 2em;
   width: 100%;
+  // padding: 3px 1em 1em;
   padding: 1em;
 }
 
+.black-background {
+  background-color: black;
+  // background-image: url("https://www.transparenttextures.com/patterns/black-paper.png");
+}
+
+.p-up-videos {
+  margin: 0 auto;
+}
+
 .student-video {
-  margin: 1em 0;
+  margin: 1em;
 }
 
 .flex-center {
@@ -281,6 +306,17 @@ a:hover {
   height: 450px;
   position: absolute;
   z-index: 2;
+}
+
+// .vid-row {
+//   margin-top: -440px;
+// }
+
+.pinup-overlay-videos {
+  height: 450px;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0 30px 10px 0;
 }
 
 @-webkit-keyframes rubberBand {
@@ -687,10 +723,6 @@ hr {
   width: 100%;
 }
 
-.get-in-touch {
-  text-align: center;
-}
-
 .contactField {
   margin: 0.5em 0 0 0;
   border-radius: .25rem;
@@ -715,7 +747,8 @@ hr {
   margin: 0 auto;
 }
 
-.get-in-touch {
+h2 {
+  text-align: center;
   font-family: alice, serif;
   color: $brass;
 }
@@ -931,6 +964,11 @@ circle {
 
 #students-page {
   margin-top: 86px;
+  // display: flex;
+  // justify-content: center;
+}
+
+#students-page-container {
   display: flex;
   justify-content: center;
 }
