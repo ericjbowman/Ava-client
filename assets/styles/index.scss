@@ -1063,6 +1063,11 @@ circle {
 }
 
 @media only screen and (max-width: 600px) {
+  .students-background {
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: scroll;
+  }
   .rec-row-2 {
     display: flex;
     justify-content: center;
