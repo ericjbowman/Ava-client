@@ -1,7 +1,6 @@
 'use strict'
 
 const indexDisplay = require('./templates/index-gigs.handlebars')
-const editGigs = require('./templates/edit-gigs.handlebars')
 const events = require('./events.js')
 const api = require('./api.js')
 
@@ -29,6 +28,9 @@ $(() => {
     setTimeout(function () {
       $('#blurb4').removeClass('disappear')
     }, 2500)
+    setTimeout(function () {
+      $('#blurb5').removeClass('disappear')
+    }, 3000)
   }
   $(document).ready(function () {
     blurbs()

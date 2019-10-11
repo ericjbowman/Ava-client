@@ -28,16 +28,16 @@ const onClickRecordings = function () {
   // const flipPlayers = function () {
   //   setTimeout(function () {
   //     $('#mvt-1').removeClass('disappear')
-  //   }, 500)
+  //   }, 1500)
   //   setTimeout(function () {
   //     $('#mvt-2').removeClass('disappear')
-  //   }, 1500)
+  //   }, 2000)
   //   setTimeout(function () {
   //     $('#mvt-3').removeClass('disappear')
   //   }, 2500)
   // }
   // $(document).ready(function () {
-  // flipPlayers()
+  //   flipPlayers()
   // })
   // setTimeout(function () {
   //   $('#spotify-player').removeClass('disappear')
@@ -120,10 +120,6 @@ const onCreateGig = function (event) {
   event.preventDefault()
   const data = getFormFields(this)
   console.log('date parse: ', Date.parse(data.gig.date))
-  // const seconds = Date.parse(data.gig.date).toLocaleString()
-  // const d = new Date(Date.parse(data.gig.date) + 18000000)
-  // console.log('d should work', d)
-  // console.log('date', data.gig.date.toString())
   const gig = new Gig(data.gig)
   api.createGig(gig)
     .then(indexGigs)
