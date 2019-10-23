@@ -51,8 +51,14 @@ $(() => {
   // setTimeout(function () {
   //   $('#blurb4').removeClass('disappear')
   // }, 2500)
+  const sortByDate = function (gigs) {
+    return gigs.sort(function compareNumbers (a, b) {
+      return (new Date(a.date).getTime()) - (new Date(b.date).getTime())
+    })
+  }
+
   api.indexGigs()
-    .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: responseData.gigs.reverse() })))
+    .then((responseData) => $('.gigs-container').html(indexDisplay({ gigs: sortByDate(responseData.gigs) })))
     // .then((responseData) => $('#signInSuccess').html(editGigs({ gigs: responseData.gigs.reverse() })))
     .then(() => {
       $('.calendar-loader').hide()
